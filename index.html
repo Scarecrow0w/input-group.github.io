@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <header>
+      <div class="flex items-center gap-10 ">
+        <img class="w-40 h-40 " src="" alt="logo">
+        <span class="text-2xl">Title</span>
+      </div>
+      <nav class="flex justify-center">
+        <ul class="flex gap-5 text-xl ">
+          <li><a href="#">Link</a></li>
+          <li>|</li>
+          <li><a href="#">Link</a></li>
+          <li>|</li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex justify-center">
+      <div class="flex flex-col w-1/2 p-4 mt-10 border rounded-md shadow">
+        <span class="text-blue-500 ">Информация о студенте</span>
+        <small class="text-xs text-gray-300">Поля отмеченные <span class="text-red-500">* </span>обязательны к заполнению</small>
+        <div class="flex w-full">
+          <form class="flex w-full mt-8 gap-7" action="">
+            <div class="flex flex-col w-3/4 gap-4">
+              <label for="">
+                СНИЛС
+                <input  type="text">
+              </label>
+              <label for="">
+                <div>
+                  <span>Фамилия <span class="text-red-500">*</span></span>
+                </div>
+                <input required  type="text">
+              </label>
+              <label for="">
+                <div>
+                  <span>Имя <span class="text-red-500">*</span></span>
+                </div>
+                <input required  type="text">
+              </label>
+              <label for="">
+                <div>
+                  <span>Отчество <span class="text-red-500">*</span></span>
+                  <label class="ml-1" for="">
+                    <input type="checkbox" name="" id="">
+                    <small class="text-gray-300">отсутствует</small>
+                  </label>
+                </div>
+                <input type="text">
+              </label>
+              <label for="">
+                <div>
+                  <span>Гражданство <span class="text-red-500">*</span></span>
+                </div>
+                <select name="" id="" >
+                  <option value="">РФ</option>
+                  <option value="">Украина</option>
+                  <option value="">РБ</option>
+                </select>              
+              </label>
+              <label for="">
+                <div>
+                  <span>Пол <span class="text-red-500">*</span></span>
+                </div>
+                <select name="" id="">
+                  <option value="">Мужской</option>
+                  <option value="">Женский</option>
+                  <option value="">Другое</option>
+                </select>             
+              </label>
+              <label for="">
+                <div>
+                  <span>Дата рождения <span class="text-red-500">*</span></span>
+                </div>
+                <input type="date" name="" id="">             
+              </label>
+            </div>
+            <div class="flex flex-col justify-between flex-1 ">
+              <div class="w-full bg-gray-100 h-3/4"></div>
+              <button class="border rounded shadow-sm">Загрузить фото</button>
+              <button class="border rounded shadow-sm">Сделать фото</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </main>
+    <footer class="mt-auto text-sm text-center text-gray-300 h-14">
+      <span>Департамент информационных технологий города Москвы</span>
+      <span>Техническая поддержка портала: +7(000)000-00-00 доб. 333</span>
+    </footer>
+
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
