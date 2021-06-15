@@ -2,18 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-a {
-  @apply hover:text-blue-500
-}
+@layer base {
+  a {
+    @apply hover:text-blue-500
+  }
 
-input[type=text], input[type=date], select {
-  @apply w-2/3 px-2 border rounded shadow-sm focus:ring-blue-500 focus:ring-1 focus:outline-none
-}
-
-label {
-  @apply flex justify-between
-}
-
-header, footer {
-  @apply flex flex-col p-2 shadow-sm bg-gray-50
+  input[type=checkbox] {
+    @apply rounded border-gray-400 focus:outline-none outline-none focus:ring-0 
+  }
+  
+  input[type=text], input[type=date], select {
+    @apply w-2/3 h-8 text-sm py-0 px-2 border border-gray-200 rounded shadow focus:ring-blue-500 focus:ring-1 focus:outline-none
+  }
+  
+  label {
+    @apply flex justify-between
+  }
+  
+  header, footer {
+    @apply flex flex-col p-2 shadow-sm bg-gray-50
+  }
 }
